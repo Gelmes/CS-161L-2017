@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab3/VHDL/controltb_isim_beh.exe" -prj "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab3/VHDL/controltb_beh.prj" "work.controltb" "work.glbl" 
