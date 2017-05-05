@@ -9,13 +9,15 @@ MEMBERS
 mrubi005@ucr.edu
 
 REMARKS
-- There is a lot to pick up in this first lab since we are working with a new language. The lab was prity streight forward most of the time was spent in understanding and implementation.
-- This code could be further improved by changing the organasation and layout. This is not optimal due to lack of experience with VHDL
-
+- There are some code optimisations that were done in this lab.
+- The main optimisations can be seen in the control_unit.v where istead of setting all variables at once. Instead the variables are set to zero at the beginning of the combinational logic and then only the bits that need to be set to 1 are manipulated.
+- In alu_control the variables names are also used instead of bits.
+- No variable names were used in previous quarter. I took previous labs as template for the variable names but did some optimisations that helped with the alu_control. If you are comparing to previous variables look at the functions, instead of them being 6 bits they are 4 bits, This is important.
+- for the instruction_5_0 on the lower 4 bits are used since these are the ones that determine the alu operation to perform.
 ==========================================================
 
 BUGS IF ANY 
-- The ALU worked fine with the provided test bench. It might need some edge cases but it took some time to try and figure those out.
+- No known bugs
 
 
 
