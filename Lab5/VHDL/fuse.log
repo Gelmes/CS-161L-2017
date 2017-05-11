@@ -1,0 +1,32 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench_isim_beh.exe -prj C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench_beh.prj work.cs161_processor_testbench work.glbl 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/mux_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cpu_registers.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cpumemory.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/control_unit.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/alu_control.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/alu.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor.v" into library work
+Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module cpumemory
+Compiling module control_unit
+Compiling module mux_2_1(WORD_SIZE=5)
+Compiling module cpu_registers
+Compiling module mux_2_1
+Compiling module alu_control
+Compiling module alu
+Compiling module cs161_processor
+Compiling module cs161_processor_testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench_isim_beh.exe
+Fuse Memory Usage: 27420 KB
+Fuse CPU Usage: 530 ms
