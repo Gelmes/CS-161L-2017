@@ -45,7 +45,7 @@ always @(*) begin
 			mem_write  = 1;			
 			end
 		`OP_B: begin
-			reg_dst  = 1;
+			reg_dst  = 0;
 			branch   = 1;
          alu_op   = 1;			
 			end

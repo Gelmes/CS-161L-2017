@@ -23,6 +23,7 @@ always @(*) begin
 				`FUNCT_AND: alu_out = `ALU_AND;
 				`FUNCT_OR : alu_out = `ALU_OR;
 				`FUNCT_LT : alu_out = `ALU_LT;
+				`FUNCT_NOR : alu_out = `ALU_NOR;
 			endcase
 			end
 		default: begin
