@@ -42,7 +42,7 @@ wire [`WORD_SIZE-1:0] data_read_data ;
 reg [`WORD_SIZE-1:0] buff [`MAX_REG-1:0];
 
 initial begin 
-	$readmemb("./init.coe", buff,0,255);
+	$readmemb("../init.coe", buff,0,255);
 end 
 
 // ------------------------------------------
