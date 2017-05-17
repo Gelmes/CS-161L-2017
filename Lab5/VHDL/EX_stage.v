@@ -37,7 +37,7 @@ output wire [4:0] write_reg_addr;
 assign branch_addr = pc_plus_four + (sign_extend << 2);
 
 wire [31:0] alu_2;
-wire [4:0] alu_control_in;
+wire [3:0] alu_control_in;
 
 mux_2_1 ex_mux(
 	.select_in(alu_src),						//in

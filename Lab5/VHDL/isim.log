@@ -2,8 +2,6 @@ ISim log file
 Running: C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench_isim_beh.wdb 
 ISim P.15xf (signature 0xc3576ebc)
 This is a Full version of ISim.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 40.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 5 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 40.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 5 of actual signal alu_control_in.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

@@ -5,6 +5,7 @@ module ID_stage(
 	rst,
 	instruction,
 	write_data,
+	in_reg_write,
 	
 	reg_dst,
 	branch,
@@ -27,6 +28,7 @@ input wire rst;
 input wire [31:0] instruction;
 input wire [31:0] write_data;
 input wire [4:0] write_reg_addr;
+input wire in_reg_write;
 
 output wire reg_dst;
 output wire branch;
@@ -59,7 +61,7 @@ control_unit id_ctrl(
 cpu_registers id_registers(
 	 .clk(clk),	
     .rst(rst), 
-    .reg_write(reg_write) ,
+    .reg_write(in_reg_write) ,
     .read_register_1(instruction[25:21]) ,
     .read_register_2(instruction[20:16]) , 
     .write_register(write_reg_addr) , 
