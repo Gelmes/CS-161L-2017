@@ -1,33 +1,5 @@
 `timescale 1ns / 1ps
-/*
-// wire [31:0] ex_extended_shifted;
-wire [31:0] ex_alu_2;
-wire ex_alu_zero;
-wire [3:0] ex_alu_op;
 
-assign ex_extended_shifted = pc_plus_four + (extended << 2);
-
-mux_2_1 ex_mux(
-	.select_in(ctrl_alu_src),						//in
-	.datain1(id_read_data_2),
-	.datain2(extended),
-	.data_out(ex_alu_2)
-);
-
-alu_control ex_alu_ctrl(
- .alu_op(ctrl_alu_op) ,
- .instruction_5_0(instruction[5:0]) ,
- .alu_out(ex_alu_op)
-);
-
-alu ex_alu(
-	.alu_control_in(ex_alu_op),
-	.channel_a_in(id_read_data_1), 
-	.channel_b_in(ex_alu_2),
-	.zero_out(ex_alu_zero), 
-	.alu_result_out(ex_alu_result)
-);
-*/
 module EX_stage(
 	clk,
 	rst,
