@@ -18,8 +18,7 @@ module cs161_processor(
 //----------------------------------------
 wire [31:0] pc_plus_four;
 wire [31:0] instruction;
-
-wire ctrl_mem_write;
+wire mem_write;
 wire [31:0] alu_result;
 wire [31:0] read_data_2;
 wire [31:0] mem_read_data;
@@ -34,7 +33,7 @@ IF_stage IF(
 	.instruction(instruction),
 	.pc(prog_count),
 	
-	.ctrl_mem_write(ctrl_mem_write),
+	.mem_write(mem_write),
 	.alu_result(alu_result),
 	.read_data_2(read_data_2),
 	.mem_read_data(mem_read_data)
@@ -45,15 +44,14 @@ IF_stage IF(
 //----------------------------------------
 wire  [31:0] sign_extend;
 wire [1:0] alu_op;
-wire [31:0] wb_write_data;
+wire [31:0] write_data;
 wire [31:0] read_data_1;
-
 	
 ID_stage ID(
 	.clk(clk),
 	.rst(rst),
 	.instruction(instruction),
-	.write_data(wb_write_data),
+	.write_data(write_data),
 	.write_reg_addr(write_reg_addr),
 	
 	.reg_dst(reg_dst),
@@ -61,7 +59,7 @@ ID_stage ID(
 	.mem_read(ctrl_mem_read),
 	.mem_to_reg(ctrl_mem_to_reg),
 	.alu_op(alu_op),
-	.mem_write(ctrl_mem_write),
+	.mem_write(mem_write),
 	.alu_src(alu_src),
 	.reg_write(ctrl_reg_write),
 	
@@ -107,7 +105,7 @@ mux_2_1 wb_mux(
 	.select_in(ctrl_mem_to_reg),						//in
 	.datain1(alu_result),
 	.datain2(mem_read_data),
-	.data_out(wb_write_data)
+	.data_out(write_data)
 );
 
 
@@ -119,7 +117,7 @@ assign reg1_addr = instruction[25:21];
 assign reg1_data = read_data_1;
 assign reg2_addr = instruction[20:16];
 assign reg2_data = read_data_2;
-assign write_reg_data = wb_write_data;
+assign write_reg_data = write_data;
 
 
 endmodule

@@ -2,9 +2,9 @@ Command line:
    cs161_processor_testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  64479
+     -socket  64843
 
-Wed May 17 02:11:14 2017
+Wed May 17 02:21:36 2017
 
 
  Elaboration Time: 0.046875 sec

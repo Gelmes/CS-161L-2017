@@ -9,7 +9,7 @@ module IF_stage(
 	instruction,
 	pc,
 	
-	ctrl_mem_write,
+	mem_write,
 	alu_result,
 	read_data_2,
 	mem_read_data
@@ -24,7 +24,7 @@ output wire [31:0] instruction;
 output reg  [31:0] pc;
 
 // *** DELETE LATER ***
-input  wire ctrl_mem_write;
+input  wire mem_write;
 input  wire [31:0] alu_result;
 input  wire [31:0] read_data_2;
 output wire [31:0] mem_read_data;

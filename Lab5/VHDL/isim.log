@@ -2,66 +2,11 @@ ISim log file
 Running: C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench_isim_beh.wdb 
 ISim P.15xf (signature 0xc3576ebc)
 This is a Full version of ISim.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 66.  For instance uut/IF/, width 32 of formal port alu_result is not equal to width 1 of actual signal alu_result.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 149.  For instance uut/ID/, width 32 of formal port sign_extend is not equal to width 1 of actual signal sign_extend.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 54.  For instance EX/ex_mux/, width 32 of formal port datain1 is not equal to width 1 of actual signal read_data_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 52.  For instance EX/ex_mux/, width 32 of formal port datain2 is not equal to width 1 of actual signal sign_extend.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 71.  For instance EX/ex_mux/, width 32 of formal port data_out is not equal to width 1 of actual signal alu_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 56.  For instance EX/ex_alu_ctrl/, width 2 of formal port alu_op is not equal to width 1 of actual signal alu_op.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 77.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 77.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 53.  For instance EX/ex_alu/, width 32 of formal port channel_a_in is not equal to width 1 of actual signal read_data_1.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 71.  For instance EX/ex_alu/, width 32 of formal port channel_b_in is not equal to width 1 of actual signal alu_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 46.  For instance uut/EX/, width 1 of formal port pc_plus_four is not equal to width 32 of actual signal pc_plus_four.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 128.  For instance uut/EX/, width 1 of formal port read_data_1 is not equal to width 32 of actual signal read_data_1.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 51.  For instance uut/EX/, width 1 of formal port read_data_2 is not equal to width 32 of actual signal read_data_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 126.  For instance uut/EX/, width 1 of formal port alu_op is not equal to width 2 of actual signal alu_op.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 66.  For instance uut/EX/, width 32 of formal port alu_result is not equal to width 1 of actual signal alu_result.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 66.  For instance uut/wb_mux/, width 32 of formal port datain1 is not equal to width 1 of actual signal alu_result.
+WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 40.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 5 of actual signal alu_control_in.
+WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 40.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 5 of actual signal alu_control_in.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.15xf (signature 0xc3576ebc)
-This is a Full version of ISim.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 54.  For instance EX/ex_mux/, width 32 of formal port datain1 is not equal to width 1 of actual signal read_data_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 52.  For instance EX/ex_mux/, width 32 of formal port datain2 is not equal to width 1 of actual signal sign_extend.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 71.  For instance EX/ex_mux/, width 32 of formal port data_out is not equal to width 1 of actual signal alu_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 56.  For instance EX/ex_alu_ctrl/, width 2 of formal port alu_op is not equal to width 1 of actual signal alu_op.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 77.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 77.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 53.  For instance EX/ex_alu/, width 32 of formal port channel_a_in is not equal to width 1 of actual signal read_data_1.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 71.  For instance EX/ex_alu/, width 32 of formal port channel_b_in is not equal to width 1 of actual signal alu_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 46.  For instance uut/EX/, width 1 of formal port pc_plus_four is not equal to width 32 of actual signal pc_plus_four.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 124.  For instance uut/EX/, width 1 of formal port sign_extend is not equal to width 32 of actual signal sign_extend.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 127.  For instance uut/EX/, width 1 of formal port read_data_1 is not equal to width 32 of actual signal read_data_1.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 51.  For instance uut/EX/, width 1 of formal port read_data_2 is not equal to width 32 of actual signal read_data_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 125.  For instance uut/EX/, width 1 of formal port alu_op is not equal to width 2 of actual signal alu_op.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.15xf (signature 0xc3576ebc)
-This is a Full version of ISim.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 71.  For instance EX/ex_mux/, width 32 of formal port data_out is not equal to width 1 of actual signal alu_2.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 77.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 77.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 71.  For instance EX/ex_alu/, width 32 of formal port channel_b_in is not equal to width 1 of actual signal alu_2.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.15xf (signature 0xc3576ebc)
-This is a Full version of ISim.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 79.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 1 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 79.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 1 of actual signal alu_control_in.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.15xf (signature 0xc3576ebc)
-This is a Full version of ISim.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 68.  For instance EX/ex_alu_ctrl/, width 4 of formal port alu_out is not equal to width 5 of actual signal alu_control_in.
-WARNING: File "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 68.  For instance EX/ex_alu/, width 4 of formal port alu_control_in is not equal to width 5 of actual signal alu_control_in.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
