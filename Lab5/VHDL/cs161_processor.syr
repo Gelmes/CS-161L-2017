@@ -105,23 +105,29 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\mux_2_1.v" into library work
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\mux_2_1.v" into library work
 Parsing module <mux_2_1>.
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cpu_registers.v" into library work
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cpu_registers.v" into library work
 Parsing module <cpu_registers>.
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cpumemory.v" into library work
-WARNING:HDLCompiler:572 - "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cpumemory.v" Line 6: Macro <MAX_REG> is redefined.
-WARNING:HDLCompiler:572 - "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cpumemory.v" Line 7: Macro <WORD_SIZE> is redefined.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cpumemory.v" into library work
+WARNING:HDLCompiler:572 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cpumemory.v" Line 6: Macro <MAX_REG> is redefined.
+WARNING:HDLCompiler:572 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cpumemory.v" Line 7: Macro <WORD_SIZE> is redefined.
 Parsing module <cpumemory>.
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\control_unit.v" into library work
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\control_unit.v" into library work
 Parsing verilog file "constants.v" included at line 2.
 Parsing module <control_unit>.
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\alu_control.v" into library work
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\alu_control.v" into library work
 Parsing verilog file "constants.v" included at line 2.
 Parsing module <alu_control>.
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\alu.v" into library work
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\alu.v" into library work
 Parsing module <alu>.
-Analyzing Verilog file "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cs161_processor.v" into library work
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\IF_stage.v" into library work
+Parsing module <IF_stage>.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\ID_stage.v" into library work
+Parsing module <ID_stage>.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" into library work
+Parsing module <EX_stage>.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" into library work
 Parsing module <cs161_processor>.
 
 =========================================================================
@@ -130,61 +136,97 @@ Parsing module <cs161_processor>.
 
 Elaborating module <cs161_processor>.
 
-Elaborating module <cpumemory>.
-Reading initialization file \"./init.coe\".
-
-Elaborating module <control_unit>.
-WARNING:HDLCompiler:1127 - "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cs161_processor.v" Line 65: Assignment to ctrl_mem_read ignored, since the identifier is never used
-
-Elaborating module <mux_2_1(WORD_SIZE=5)>.
-
-Elaborating module <cpu_registers>.
+Elaborating module <IF_stage>.
 
 Elaborating module <mux_2_1>.
 
+Elaborating module <cpumemory>.
+Reading initialization file \"./init.coe\".
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 66: Size mismatch in connection of port <alu_result>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <ID_stage>.
+
+Elaborating module <control_unit>.
+
+Elaborating module <cpu_registers>.
+WARNING:HDLCompiler:1127 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 140: Assignment to ctrl_mem_read ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 145: Assignment to ctrl_reg_write ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 149: Size mismatch in connection of port <sign_extend>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <EX_stage>.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 69: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 70: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 71: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+
 Elaborating module <alu_control>.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 75: Size mismatch in connection of port <alu_op>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 77: Size mismatch in connection of port <alu_out>. Formal port size is 4-bit while actual signal size is 1-bit.
 
 Elaborating module <alu>.
-WARNING:HDLCompiler:413 - "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\alu.v" Line 59: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\alu.v" Line 59: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 81: Size mismatch in connection of port <alu_control_in>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 82: Size mismatch in connection of port <channel_a_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v" Line 83: Size mismatch in connection of port <channel_b_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <mux_2_1(WORD_SIZE=5)>.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 188: Size mismatch in connection of port <pc_plus_four>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 190: Size mismatch in connection of port <read_data_1>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 191: Size mismatch in connection of port <read_data_2>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 193: Size mismatch in connection of port <alu_op>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 199: Size mismatch in connection of port <alu_result>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" Line 228: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 1-bit.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <cs161_processor>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cs161_processor.v".
-INFO:Xst:3210 - "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cs161_processor.v" line 61: Output port <mem_read> of the instance <id_ctrl> is unconnected or connected to loadless signal.
-    Found 32-bit register for signal <prog_count>.
-    Found 32-bit adder for signal <pc_plus_four> created at line 32.
-    Found 32-bit adder for signal <ex_extended_shifted> created at line 101.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v".
+INFO:Xst:3210 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" line 131: Output port <mem_read> of the instance <ID> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cs161_processor.v" line 131: Output port <reg_write> of the instance <ID> is unconnected or connected to loadless signal.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
+	no macro.
 Unit <cs161_processor> synthesized.
 
+Synthesizing Unit <IF_stage>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\IF_stage.v".
+WARNING:Xst:647 - Input <alu_result<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit adder for signal <pc_plus_four> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <IF_stage> synthesized.
+
+Synthesizing Unit <mux_2_1>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\mux_2_1.v".
+        WORD_SIZE = 32
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_2_1> synthesized.
+
 Synthesizing Unit <cpumemory>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cpumemory.v".
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cpumemory.v".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 256x32-bit dual-port RAM <Mram_buff> for signal <buff>.
     Summary:
 	inferred   1 RAM(s).
 Unit <cpumemory> synthesized.
 
+Synthesizing Unit <ID_stage>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\ID_stage.v".
+    Summary:
+	no macro.
+Unit <ID_stage> synthesized.
+
 Synthesizing Unit <control_unit>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\control_unit.v".
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\control_unit.v".
     Summary:
 	no macro.
 Unit <control_unit> synthesized.
 
-Synthesizing Unit <mux_2_1_1>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\mux_2_1.v".
-        WORD_SIZE = 5
-    Summary:
-	inferred   1 Multiplexer(s).
-Unit <mux_2_1_1> synthesized.
-
 Synthesizing Unit <cpu_registers>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\cpu_registers.v".
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\cpu_registers.v".
     Found 1024-bit register for signal <n0044[1023:0]>.
     Found 32-bit 32-to-1 multiplexer for signal <read_data_1> created at line 41.
     Found 32-bit 32-to-1 multiplexer for signal <read_data_2> created at line 42.
@@ -193,18 +235,23 @@ Synthesizing Unit <cpu_registers>.
 	inferred  34 Multiplexer(s).
 Unit <cpu_registers> synthesized.
 
-Synthesizing Unit <mux_2_1>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\mux_2_1.v".
-        WORD_SIZE = 32
+Synthesizing Unit <EX_stage>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\EX_stage.v".
+WARNING:Xst:647 - Input <instruction<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <instruction<31:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit adder for signal <n0019[3:0]> created at line 65.
     Summary:
-	inferred   1 Multiplexer(s).
-Unit <mux_2_1> synthesized.
+	inferred   1 Adder/Subtractor(s).
+Unit <EX_stage> synthesized.
 
 Synthesizing Unit <alu_control>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\alu_control.v".
-    Found 1-bit 4-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_14_o> created at line 12.
-    Found 1-bit 3-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_18_o> created at line 12.
-    Found 1-bit 3-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_22_o> created at line 12.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\alu_control.v".
+    Found 1-bit 3-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_11_o> created at line 12.
+    Found 1-bit 4-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_15_o> created at line 12.
+    Found 1-bit 3-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_19_o> created at line 12.
+    Found 1-bit 3-to-1 multiplexer for signal <alu_op[1]_instruction_5_0[5]_Mux_23_o> created at line 12.
 WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -215,7 +262,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<3>>. Latches may be gene
 Unit <alu_control> synthesized.
 
 Synthesizing Unit <alu>.
-    Related source file is "C:\Users\Marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab4\VHDL\alu.v".
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\alu.v".
     Found 32-bit subtractor for signal <channel_a_in[31]_channel_b_in[31]_sub_4_OUT> created at line 39.
     Found 32-bit adder for signal <channel_a_in[31]_channel_b_in[31]_add_2_OUT> created at line 38.
     Found 32-bit comparator greater for signal <channel_a_in[31]_channel_b_in[31]_LessThan_7_o> created at line 44
@@ -224,6 +271,13 @@ Synthesizing Unit <alu>.
 	inferred   1 Comparator(s).
 Unit <alu> synthesized.
 
+Synthesizing Unit <mux_2_1_1>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab5\VHDL\mux_2_1.v".
+        WORD_SIZE = 5
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_2_1_1> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
@@ -231,8 +285,9 @@ Macro Statistics
 # RAMs                                                 : 1
  256x32-bit dual-port RAM                              : 1
 # Adders/Subtractors                                   : 4
- 32-bit adder                                          : 3
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
 # Registers                                            : 2
  1024-bit register                                     : 1
  32-bit register                                       : 1
@@ -241,8 +296,8 @@ Macro Statistics
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
 # Multiplexers                                         : 43
- 1-bit 2-to-1 multiplexer                              : 2
- 1-bit 3-to-1 multiplexer                              : 2
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 3-to-1 multiplexer                              : 3
  1-bit 4-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 35
  32-bit 32-to-1 multiplexer                            : 2
@@ -285,15 +340,16 @@ Macro Statistics
 # RAMs                                                 : 1
  256x32-bit dual-port distributed RAM                  : 1
 # Adders/Subtractors                                   : 4
- 32-bit adder                                          : 3
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
 # Registers                                            : 1056
  Flip-Flops                                            : 1056
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
 # Multiplexers                                         : 43
- 1-bit 2-to-1 multiplexer                              : 2
- 1-bit 3-to-1 multiplexer                              : 2
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 3-to-1 multiplexer                              : 3
  1-bit 4-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 35
  32-bit 32-to-1 multiplexer                            : 2
@@ -304,23 +360,31 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <pc_0> has a constant value of 0 in block <cs161_processor>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pc_1> has a constant value of 0 in block <cs161_processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alu_out_3> (without init value) has a constant value of 0 in block <alu_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alu_out_1> (without init value) has a constant value of 1 in block <alu_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alu_out_0> (without init value) has a constant value of 0 in block <alu_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <alu_out_2> is equivalent to a wire in block <alu_control>.
+WARNING:Xst:1710 - FF/Latch <IF/pc_0> (without init value) has a constant value of 0 in block <cs161_processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF/pc_1> (without init value) has a constant value of 0 in block <cs161_processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff14> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff16> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff18> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff20> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff22> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff4> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff6> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff8> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff10> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <IF/memory/Mram_buff12> of sequential type is unconnected in block <cs161_processor>.
 
 Optimizing unit <cs161_processor> ...
 
 Optimizing unit <cpu_registers> ...
 
-Optimizing unit <alu> ...
-
-Optimizing unit <alu_control> ...
-WARNING:Xst:1710 - FF/Latch <alu_out_3> (without init value) has a constant value of 0 in block <alu_control>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <alu_out_3> (without init value) has a constant value of 0 in block <alu_control>. This FF/Latch will be trimmed during the optimization process.
-
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block cs161_processor, actual ratio is 4.
-FlipFlop pc_9 has been replicated 2 time(s)
+FlipFlop IF/pc_9 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -328,8 +392,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1056
- Flip-Flops                                            : 1056
+# Registers                                            : 1055
+ Flip-Flops                                            : 1055
 
 =========================================================================
 
@@ -352,25 +416,22 @@ Top Level Output File Name         : cs161_processor.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2408
+# BELS                             : 1952
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 29
-#      LUT2                        : 1
-#      LUT3                        : 1047
-#      LUT4                        : 65
-#      LUT5                        : 138
-#      LUT6                        : 799
-#      MUXCY                       : 138
-#      MUXF7                       : 64
+#      LUT3                        : 18
+#      LUT5                        : 1086
+#      LUT6                        : 689
+#      MUXCY                       : 29
+#      MUXF7                       : 68
 #      VCC                         : 1
-#      XORCY                       : 124
-# FlipFlops/Latches                : 1059
-#      FDC                         : 32
+#      XORCY                       : 30
+# FlipFlops/Latches                : 1055
+#      FDC                         : 31
 #      FDRE                        : 1024
-#      LD                          : 3
-# RAMS                             : 64
-#      RAM128X1D                   : 64
+# RAMS                             : 54
+#      RAM128X1D                   : 54
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 150
@@ -384,18 +445,18 @@ Selected Device : xa7a100tcsg324-2i
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1059  out of  126800     0%  
- Number of Slice LUTs:                 2336  out of  63400     3%  
-    Number used as Logic:              2080  out of  63400     3%  
-    Number used as Memory:              256  out of  19000     1%  
-       Number used as RAM:              256
+ Number of Slice Registers:            1055  out of  126800     0%  
+ Number of Slice LUTs:                 2039  out of  63400     3%  
+    Number used as Logic:              1823  out of  63400     2%  
+    Number used as Memory:              216  out of  19000     1%  
+       Number used as RAM:              216
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2338
-   Number with an unused Flip Flop:    1279  out of   2338    54%  
-   Number with an unused LUT:             2  out of   2338     0%  
-   Number of fully used LUT-FF pairs:  1057  out of   2338    45%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:   2040
+   Number with an unused Flip Flop:     985  out of   2040    48%  
+   Number with an unused LUT:             1  out of   2040     0%  
+   Number of fully used LUT-FF pairs:  1054  out of   2040    51%  
+   Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                         151
@@ -422,16 +483,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-------------------------------------------------------------------------------------------------------------+-------------------------------+-------+
-Clock Signal                                                                                                | Clock buffer(FF name)         | Load  |
-------------------------------------------------------------------------------------------------------------+-------------------------------+-------+
-clk                                                                                                         | BUFGP                         | 1120  |
-ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o(ex_alu_ctrl/Mmux_alu_op[1]_instruction_5_0[5]_Mux_11_o1:O)| NONE(*)(ex_alu_ctrl/alu_out_0)| 3     |
-------------------------------------------------------------------------------------------------------------+-------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1109  |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -441,9 +497,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 7.289ns (Maximum Frequency: 137.202MHz)
+   Minimum period: 3.726ns (Maximum Frequency: 268.367MHz)
    Minimum input arrival time before clock: 0.927ns
-   Maximum output required time after clock: 6.326ns
+   Maximum output required time after clock: 4.368ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -452,174 +508,73 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.289ns (frequency: 137.202MHz)
-  Total number of paths / destination ports: 39505041 / 2656
+  Clock period: 3.726ns (frequency: 268.367MHz)
+  Total number of paths / destination ports: 74220 / 2219
 -------------------------------------------------------------------------
-Delay:               7.289ns (Levels of Logic = 26)
-  Source:            pc_9_1 (FF)
-  Destination:       pc_2 (FF)
+Delay:               3.726ns (Levels of Logic = 5)
+  Source:            IF/pc_9_1 (FF)
+  Destination:       ID/id_registers/RFILE_0_1023 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: pc_9_1 to pc_2
+  Data Path: IF/pc_9_1 to ID/id_registers/RFILE_0_1023
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.361   0.360  pc_9_1 (pc_9_1)
-     LUT3:I2->O          257   0.097   0.611  inst_LPM_MUX321161 (reg2_addr_0_OBUF)
-     LUT6:I4->O            1   0.097   0.616  id_registers/Mmux_read_data_2_10 (id_registers/Mmux_read_data_2_10)
-     LUT6:I2->O            1   0.097   0.000  id_registers/Mmux_read_data_2_2_f7_G (N132)
-     MUXF7:I1->O           6   0.279   0.383  id_registers/Mmux_read_data_2_2_f7 (reg2_data_0_OBUF)
-     LUT5:I4->O            3   0.097   0.628  ex_mux/Mmux_data_out12 (ex_alu_2<0>)
-     LUT4:I0->O            1   0.097   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_lut<0> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_lut<0>)
-     MUXCY:S->O            1   0.353   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<0> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<1> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<2> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<3> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<4> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<5> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<6> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<7> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<8> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<9> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<10> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<11> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<12> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<13> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<14> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<14>)
-     MUXCY:CI->O          35   0.023   0.485  ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<15> (ex_alu/Mcompar_channel_a_in[31]_channel_b_in[31]_LessThan_7_o_cy<15>)
-     LUT6:I5->O            2   0.097   0.758  ex_alu/temp<9>2 (ex_alu_result<9>)
-     LUT6:I0->O            1   0.097   0.743  mem_mux_branch3 (mem_mux_branch3)
-     LUT6:I1->O           30   0.097   0.484  mem_mux_branch7 (mem_mux_branch)
-     LUT3:I2->O            3   0.097   0.000  mem_mux_pc/Mmux_data_out321 (pc_temp<9>)
-     FDC:D                     0.008          pc_9
+     FDC:C->Q              2   0.361   0.360  IF/pc_9_1 (IF/pc_9_1)
+     LUT3:I2->O            5   0.097   0.776  inst_LPM_MUX6211 (instr_opcode_4_OBUF)
+     LUT6:I0->O            5   0.097   0.378  ID/id_ctrl/reg_dst<5>1 (ID/alu_op<1>)
+     LUT6:I5->O           33   0.097   0.873  EX/id_mux/Mmux_data_out51 (write_reg_addr_4_OBUF)
+     LUT5:I0->O           32   0.097   0.485  ID/id_registers/write_register[4]_Decoder_3_OUT<24><4>1 (ID/id_registers/write_register[4]_Decoder_3_OUT<24>)
+     LUT6:I5->O            1   0.097   0.000  ID/id_registers/Mmux_RFILE[24][31]_write_data[31]_mux_11_OUT110 (ID/id_registers/RFILE[24][31]_write_data[31]_mux_11_OUT<0>)
+     FDRE:D                    0.008          ID/id_registers/RFILE_0_768
     ----------------------------------------
-    Total                      7.289ns (2.219ns logic, 5.070ns route)
-                                       (30.4% logic, 69.6% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o'
-  Clock period: 1.911ns (frequency: 523.330MHz)
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Delay:               1.911ns (Levels of Logic = 2)
-  Source:            ex_alu_ctrl/alu_out_0 (LATCH)
-  Destination:       ex_alu_ctrl/alu_out_0 (LATCH)
-  Source Clock:      ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o falling
-  Destination Clock: ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o falling
-
-  Data Path: ex_alu_ctrl/alu_out_0 to ex_alu_ctrl/alu_out_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q              69   0.472   0.890  ex_alu_ctrl/alu_out_0 (ex_alu_ctrl/alu_out_0)
-     LUT6:I0->O            1   0.097   0.355  ex_alu_ctrl/Mmux_alu_op[1]_instruction_5_0[5]_Mux_22_o13 (ex_alu_ctrl/Mmux_alu_op[1]_instruction_5_0[5]_Mux_22_o12)
-     LUT3:I2->O            1   0.097   0.000  ex_alu_ctrl/Mmux_alu_op[1]_instruction_5_0[5]_Mux_22_o14 (ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_22_o)
-     LD:D                     -0.028          ex_alu_ctrl/alu_out_0
-    ----------------------------------------
-    Total                      1.911ns (0.666ns logic, 1.245ns route)
-                                       (34.9% logic, 65.1% route)
+    Total                      3.726ns (0.854ns logic, 2.872ns route)
+                                       (22.9% logic, 77.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1056 / 1056
+  Total number of paths / destination ports: 1055 / 1055
 -------------------------------------------------------------------------
 Offset:              0.927ns (Levels of Logic = 1)
   Source:            rst (PAD)
-  Destination:       pc_2 (FF)
+  Destination:       IF/pc_2 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst to pc_2
+  Data Path: rst to IF/pc_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1056   0.001   0.577  rst_IBUF (rst_IBUF)
-     FDC:CLR                   0.349          pc_2
+     IBUF:I->O          1055   0.001   0.577  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.349          IF/pc_2
     ----------------------------------------
     Total                      0.927ns (0.350ns logic, 0.577ns route)
                                        (37.8% logic, 62.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 705976 / 147
+  Total number of paths / destination ports: 3839 / 147
 -------------------------------------------------------------------------
-Offset:              6.326ns (Levels of Logic = 41)
-  Source:            pc_9_1 (FF)
-  Destination:       write_reg_data<31> (PAD)
+Offset:              4.368ns (Levels of Logic = 7)
+  Source:            IF/pc_9 (FF)
+  Destination:       write_reg_data<0> (PAD)
   Source Clock:      clk rising
 
-  Data Path: pc_9_1 to write_reg_data<31>
+  Data Path: IF/pc_9 to write_reg_data<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.361   0.360  pc_9_1 (pc_9_1)
-     LUT3:I2->O          257   0.097   0.611  inst_LPM_MUX321161 (reg2_addr_0_OBUF)
-     LUT6:I4->O            1   0.097   0.616  id_registers/Mmux_read_data_2_10 (id_registers/Mmux_read_data_2_10)
-     LUT6:I2->O            1   0.097   0.000  id_registers/Mmux_read_data_2_2_f7_G (N132)
-     MUXF7:I1->O           6   0.279   0.467  id_registers/Mmux_read_data_2_2_f7 (reg2_data_0_OBUF)
-     LUT6:I4->O            1   0.097   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_lut<0> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_lut<0>)
-     MUXCY:S->O            1   0.353   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<0> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<1> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<2> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<3> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<4> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<5> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<6> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<7> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<8> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<9> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<10> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<11> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<12> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<13> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<14> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<15> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<15>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<16> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<16>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<17> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<17>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<18> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<18>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<19> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<19>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<20> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<20>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<21> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<21>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<22> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<22>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<23> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<23>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<24> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<24>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<25> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<25>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<26> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<26>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<27> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<27>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<28> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<28>)
-     MUXCY:CI->O           1   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<29> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<29>)
-     MUXCY:CI->O           0   0.023   0.000  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<30> (ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_cy<30>)
-     XORCY:CI->O           1   0.370   0.355  ex_alu/Madd_channel_a_in[31]_channel_b_in[31]_add_2_OUT_xor<31> (ex_alu/channel_a_in[31]_channel_b_in[31]_add_2_OUT<31>)
-     LUT5:I4->O            2   0.097   0.360  ex_alu/temp<31>1 (ex_alu/temp<31>)
-     LUT6:I5->O            1   0.097   0.355  ex_alu/temp<31>2 (ex_alu_result<31>)
-     LUT5:I4->O           33   0.097   0.469  wb_mux/Mmux_data_out251 (write_reg_data_31_OBUF)
-     OBUF:I->O                 0.000          write_reg_data_31_OBUF (write_reg_data<31>)
+     FDC:C->Q             63   0.361   0.491  IF/pc_9 (IF/pc_9)
+     LUT3:I2->O          257   0.097   0.527  inst_LPM_MUX48111 (reg2_addr_1_OBUF)
+     LUT6:I5->O            1   0.097   0.616  ID/id_registers/Mmux_read_data_2_81 (ID/id_registers/Mmux_read_data_2_81)
+     LUT6:I2->O            1   0.097   0.000  ID/id_registers/Mmux_read_data_2_3 (ID/id_registers/Mmux_read_data_2_3)
+     MUXF7:I1->O           4   0.279   0.372  ID/id_registers/Mmux_read_data_2_2_f7 (reg2_data_0_OBUF)
+     LUT6:I5->O          117   0.097   0.899  EX/ex_alu/temp<0> (n0023<0>)
+     LUT6:I0->O            1   0.097   0.339  wb_mux/Mmux_data_out11 (write_reg_data_0_OBUF)
+     OBUF:I->O                 0.000          write_reg_data_0_OBUF (write_reg_data<0>)
     ----------------------------------------
-    Total                      6.326ns (2.732ns logic, 3.594ns route)
-                                       (43.2% logic, 56.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o'
-  Total number of paths / destination ports: 317 / 32
--------------------------------------------------------------------------
-Offset:              3.538ns (Levels of Logic = 5)
-  Source:            ex_alu_ctrl/alu_out_0 (LATCH)
-  Destination:       write_reg_data<8> (PAD)
-  Source Clock:      ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o falling
-
-  Data Path: ex_alu_ctrl/alu_out_0 to write_reg_data<8>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q              69   0.472   0.708  ex_alu_ctrl/alu_out_0 (ex_alu_ctrl/alu_out_0)
-     LUT3:I0->O            1   0.097   0.571  ex_alu/temp<8>1_SW0 (N1010)
-     LUT6:I3->O            1   0.097   0.000  ex_alu/temp<8>2_lut1 (ex_alu/temp<8>2_lut1)
-     MUXCY:S->O            2   0.583   0.444  ex_alu/temp<8>2_cy1 (ex_alu_result<8>)
-     LUT5:I3->O           33   0.097   0.469  wb_mux/Mmux_data_out311 (write_reg_data_8_OBUF)
-     OBUF:I->O                 0.000          write_reg_data_8_OBUF (write_reg_data<8>)
-    ----------------------------------------
-    Total                      3.538ns (1.346ns logic, 2.192ns route)
-                                       (38.0% logic, 62.0% route)
+    Total                      4.368ns (1.125ns logic, 3.243ns route)
+                                       (25.8% logic, 74.2% route)
 
 =========================================================================
 
@@ -627,34 +582,24 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
--------------------------------------------------+---------+---------+---------+---------+
-                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------+---------+---------+---------+---------+
-clk                                              |    7.289|         |         |         |
-ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o|         |    4.415|         |         |
--------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o
--------------------------------------------------+---------+---------+---------+---------+
-                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------+---------+---------+---------+---------+
-clk                                              |         |         |    3.122|         |
-ex_alu_ctrl/alu_op[1]_instruction_5_0[5]_Mux_11_o|         |         |    1.911|         |
--------------------------------------------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.726|         |         |         |
+---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 40.63 secs
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 36.26 secs
  
 --> 
 
-Total memory usage is 867892 kilobytes
+Total memory usage is 867684 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

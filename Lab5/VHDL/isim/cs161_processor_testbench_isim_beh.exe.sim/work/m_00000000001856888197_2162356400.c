@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cpumemory.v";
+static const char *ng0 = "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cpumemory.v";
 static const char *ng1 = "./init.coe";
 static int ng2[] = {0, 0};
 static int ng3[] = {255, 0};

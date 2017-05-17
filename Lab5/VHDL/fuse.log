@@ -1,32 +1,39 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench_isim_beh.exe -prj C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench_beh.prj work.cs161_processor_testbench work.glbl 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench_isim_beh.exe" -prj "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench_beh.prj" "work.cs161_processor_testbench" "work.glbl" 
 ISim P.15xf (signature 0xc3576ebc)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/mux_2_1.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cpu_registers.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cpumemory.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/control_unit.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/alu_control.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/alu.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor.v" into library work
-Analyzing Verilog file "C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/mux_2_1.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cpu_registers.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cpumemory.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/control_unit.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/alu_control.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/alu.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/IF_stage.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/ID_stage.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" into library work
+Analyzing Verilog file "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 80: Size mismatch in connection of port <alu_out>. Formal port size is 4-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v" Line 84: Size mismatch in connection of port <alu_control_in>. Formal port size is 4-bit while actual signal size is 5-bit.
 Completed static elaboration
-Compiling module cpumemory
-Compiling module control_unit
-Compiling module mux_2_1(WORD_SIZE=5)
-Compiling module cpu_registers
 Compiling module mux_2_1
+Compiling module cpumemory
+Compiling module IF_stage
+Compiling module control_unit
+Compiling module cpu_registers
+Compiling module ID_stage
 Compiling module alu_control
 Compiling module alu
+Compiling module mux_2_1(WORD_SIZE=5)
+Compiling module EX_stage
 Compiling module cs161_processor
 Compiling module cs161_processor_testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 10 Verilog Units
-Built simulation executable C:/Users/Marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab4/VHDL/cs161_processor_testbench_isim_beh.exe
-Fuse Memory Usage: 27420 KB
-Fuse CPU Usage: 530 ms
+Compiled 13 Verilog Units
+Built simulation executable C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench_isim_beh.exe
+Fuse Memory Usage: 27516 KB
+Fuse CPU Usage: 452 ms
