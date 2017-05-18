@@ -43,9 +43,6 @@ output wire [31:0] read_data_1;
 output wire [31:0] read_data_2;
 output wire [31:0] sign_extend;
 
-
-wire reg_wrtie;
-
 control_unit id_ctrl( 
 	.instr_op(instruction[31-:6]),
 	.reg_dst(reg_dst),

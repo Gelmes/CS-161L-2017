@@ -21,14 +21,12 @@ input  wire pc_src;
 input  wire [31:0] branch_addr;
 output wire [31:0] pc_plus_four;
 output wire [31:0] instruction;
-output reg  [31:0] pc;
+output reg  [31:0] pc = 0;
 
-// *** DELETE LATER ***
 input  wire mem_write;
 input  wire [31:0] alu_result;
 input  wire [31:0] read_data_2;
 output wire [31:0] mem_read_data;
-// *********************
 
 //---------------------------------------- 
 //  IF  
@@ -49,7 +47,7 @@ cpumemory memory(
    .rst(rst),
    .instr_read_address(pc[9:2]),
    .instr_instruction(instruction),    //Out
-   .data_mem_write(ctrl_mem_write), 
+   .data_mem_write(mem_write), 
    .data_address(alu_result[7:0]),    
    .data_write_data(read_data_2),    
    .data_read_data(mem_read_data)      //Out
@@ -57,7 +55,7 @@ cpumemory memory(
 
 always @(posedge clk, posedge rst) begin
 	if(rst == 1) begin
-		pc = 'b0;
+		//pc = 'b0;
 	end else begin
 		pc = pc_temp;
 	end

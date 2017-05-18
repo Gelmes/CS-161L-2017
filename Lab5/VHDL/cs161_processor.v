@@ -35,17 +35,18 @@ IF_stage IF(
 	.instruction(instruction),      //IF/ID
 	.pc(prog_count),
 	
-	.mem_write(mem_write),
-	.alu_result(alu_result),
-	.read_data_2(read_data_2),
+	.mem_write(MEM_mem_write),
+	.alu_result(MEM_alu_result),
+	.read_data_2(MEM_read_data_2),
 	.mem_read_data(read_data)
 );
 
-
 wire [31:0] ID_pc_plus_four;
 wire [31:0] ID_instruction;
+wire [31:0] ID_read_data;
 gen_register IFID_pc_plus_four(.clk(clk),.rst(rst),.write_en(true),.data_in(pc_plus_four),.data_out(ID_pc_plus_four));
 gen_register IFID_instruction (.clk(clk),.rst(rst),.write_en(true),.data_in(instruction),.data_out(ID_instruction));
+gen_register IFID_read_data (.clk(clk),.rst(rst),.write_en(true),.data_in(read_data),.data_out(ID_read_data));
 
 //----------------------------------------
 //ID
@@ -61,9 +62,9 @@ ID_stage ID(
 	.clk(clk),
 	.rst(rst),
 	.instruction(ID_instruction),
-	.write_data(WB_write_data),
-	.write_reg_addr(WB_write_reg_addr),
-	.in_reg_write(WB_reg_write),
+	.write_data(WB_write_data),          ///
+	.write_reg_addr(WB_write_reg_addr),  ///
+	.in_reg_write(WB_reg_write),          
 	
 	.reg_dst(reg_dst),
 	.branch(branch),
@@ -78,7 +79,6 @@ ID_stage ID(
 	.read_data_2(read_data_2),
 	.sign_extend(sign_extend)
 );
-
 
 wire [31:0] EX_pc_plus_four;
 wire [31:0] EX_instruction;
@@ -104,6 +104,7 @@ gen_register IDEX_sign_extend(.clk(clk),.rst(rst),.write_en(true),.data_in(sign_
 //EX
 //----------------------------------------
 
+wire [4:0] EX_write_reg_addr;
 EX_stage EX(
 	.clk(clk),
 	.rst(rst),
@@ -119,9 +120,8 @@ EX_stage EX(
 	.branch_addr(branch_addr),
 	.alu_zero(alu_zero),
 	.alu_result(alu_result),
-	.write_reg_addr(write_reg_addr)
+	.write_reg_addr(EX_write_reg_addr)
 );
-
 
 wire [31:0] MEM_branch_addr;
 wire [31:0] MEM_alu_result;
@@ -131,7 +131,7 @@ gen_register EXMEM_branch_addr(.clk(clk),.rst(rst),.write_en(true),.data_in(bran
 gen_register #(1) EXMEM_alu_zero(.clk(clk),.rst(rst),.write_en(true),.data_in(alu_zero),.data_out(MEM_alu_zero));
 gen_register EXMEM_alu_result(.clk(clk),.rst(rst),.write_en(true),.data_in(alu_result),.data_out(MEM_alu_result));
 gen_register EXMEM_read_data_2(.clk(clk),.rst(rst),.write_en(true),.data_in(EX_read_data_2),.data_out(MEM_read_data_2));
-gen_register #(5) EXMEM_write_reg_addr(.clk(clk),.rst(rst),.write_en(true),.data_in(write_reg_addr),.data_out(MEM_write_reg_addr));
+gen_register #(5) EXMEM_write_reg_addr(.clk(clk),.rst(rst),.write_en(true),.data_in(EX_write_reg_addr),.data_out(MEM_write_reg_addr));
 gen_register #(1) EXMEM_branch(.clk(clk),.rst(rst),.write_en(true),.data_in(EX_branch),.data_out(MEM_branch));
 gen_register #(1) EXMEM_reg_write(.clk(clk),.rst(rst),.write_en(true),.data_in(EX_reg_write),.data_out(MEM_reg_write));
 gen_register #(1) EXMEM_mem_read(.clk(clk),.rst(rst),.write_en(true),.data_in(EX_mem_read),.data_out(MEM_mem_read));
@@ -142,7 +142,6 @@ gen_register #(1) EXMEM_mem_write(.clk(clk),.rst(rst),.write_en(true),.data_in(E
 //----------------------------------------
 //MEM
 //----------------------------------------
-
 assign pc_src = MEM_branch &  MEM_alu_zero;
 
 wire [31:0] WB_alu_result;
@@ -167,11 +166,12 @@ mux_2_1 wb_mux(
 //----------------------------------------
 // Other
 //----------------------------------------
-assign instr_opcode = instruction[31-:6];
-assign reg1_addr = instruction[25:21];
+assign instr_opcode = ID_instruction[31-:6];
+assign reg1_addr = ID_instruction[25:21];
 assign reg1_data = read_data_1;
-assign reg2_addr = instruction[20:16];
+assign reg2_addr = ID_instruction[20:16];
 assign reg2_data = read_data_2;
+assign write_reg_addr = WB_write_reg_addr;
 assign write_reg_data = WB_write_data;
 
 

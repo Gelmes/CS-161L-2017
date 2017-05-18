@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 132: &lt;<arg fmt="%s" index="1">MEM_alu_result</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v" Line 133: &lt;<arg fmt="%s" index="1">MEM_read_data_2</arg>&gt; is already implicitly declared earlier.
+</msg>
+
 </messages>
 
