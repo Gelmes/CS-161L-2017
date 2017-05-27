@@ -1,0 +1,6 @@
+verilog work "STCAM_Cell.v"
+verilog work "CAM_Row.v"
+verilog work "CAM_Array.v"
+verilog work "CAM_Wrapper.v"
+verilog work "lab06_tb.v"
+verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

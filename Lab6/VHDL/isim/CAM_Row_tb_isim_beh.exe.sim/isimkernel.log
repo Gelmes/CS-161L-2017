@@ -1,0 +1,28 @@
+Command line:
+   CAM_Row_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61371
+
+Wed May 24 21:13:24 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 840.225 Meg
+
+ Total Signals          : 77
+ Total Nets             : 42
+ Total Signal Drivers   : 20
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 30
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 181
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 1154.8 Meg
+
+Wed May 24 21:13:59 2017
+

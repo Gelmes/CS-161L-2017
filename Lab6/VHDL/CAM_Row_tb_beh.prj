@@ -1,0 +1,4 @@
+verilog work "TCAM_Cell.v"
+verilog work "CAM_Row.v"
+verilog work "CAM_Row_tb.v"
+verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

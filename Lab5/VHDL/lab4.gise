@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab4.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ID_stage_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_registers_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_registers_stx_beh.prj"/>
@@ -55,9 +56,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1495071461" xil_pn:in_ck="-9151059337991219742" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1495071461">
+    <transform xil_pn:end_ts="1495756048" xil_pn:in_ck="-9151059337991219742" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1495756048">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="EX_stage.v"/>
       <outfile xil_pn:name="ID_stage.v"/>
       <outfile xil_pn:name="IF_stage.v"/>
@@ -76,18 +81,25 @@
     <transform xil_pn:end_ts="1495011814" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8031419433673169795" xil_pn:start_ts="1495011814">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1495011814" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6212550070447881007" xil_pn:start_ts="1495011814">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1495011814" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8748497883259462607" xil_pn:start_ts="1495011814">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1495071461" xil_pn:in_ck="-9151059337991219742" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1495071461">
+    <transform xil_pn:end_ts="1495752520" xil_pn:in_ck="-9151059337991219742" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1495752520">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="EX_stage.v"/>
       <outfile xil_pn:name="ID_stage.v"/>
       <outfile xil_pn:name="IF_stage.v"/>
@@ -103,9 +115,15 @@
       <outfile xil_pn:name="gen_register.v"/>
       <outfile xil_pn:name="mux_2_1.v"/>
     </transform>
-    <transform xil_pn:end_ts="1495071464" xil_pn:in_ck="-9151059337991219742" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8758652983130166602" xil_pn:start_ts="1495071461">
+    <transform xil_pn:end_ts="1495752522" xil_pn:in_ck="-9151059337991219742" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8758652983130166602" xil_pn:start_ts="1495752520">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="cs161_processor_testbench_beh.prj"/>
       <outfile xil_pn:name="cs161_processor_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -113,9 +131,13 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1495071464" xil_pn:in_ck="7403847075767739717" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3264549539327409177" xil_pn:start_ts="1495071464">
+    <transform xil_pn:end_ts="1495754163" xil_pn:in_ck="7403847075767739717" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3264549539327409177" xil_pn:start_ts="1495754163">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="cs161_processor_testbench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

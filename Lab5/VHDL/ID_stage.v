@@ -67,7 +67,8 @@ cpu_registers id_registers(
     .read_data_2(read_data_2)  
 );
 
-assign sign_extend[31:0] = { {16{instruction[15]}}, instruction[15:0] };
+//assign sign_extend[31:0] = { {16{instruction[15]}}, instruction[15:0] };
+assign sign_extend[31:0] = $signed(instruction[15:0]);
 
 
 endmodule

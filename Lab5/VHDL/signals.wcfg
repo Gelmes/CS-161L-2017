@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor_testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cs161_processor_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="54" />
+   <wvobject fp_name="/cs161_processor_testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/prog_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">prog_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prog_count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/instr_opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instr_opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_opcode[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg1_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg1_addr[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg1_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg1_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg2_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg2_addr[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg2_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg2_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/write_reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_reg_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_reg_addr[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/write_reg_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_reg_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_reg_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider11" type="divider">
+      <obj_property name="label">ID_stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/write_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/write_reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_reg_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_reg_addr[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/in_reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">in_reg_write</obj_property>
+      <obj_property name="ObjectShortName">in_reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/reg_dst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_dst</obj_property>
+      <obj_property name="ObjectShortName">reg_dst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/mem_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_read</obj_property>
+      <obj_property name="ObjectShortName">mem_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/mem_to_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_to_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_to_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/alu_op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_op[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/mem_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/alu_src" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/read_data_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/read_data_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/ID/sign_extend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sign_extend[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sign_extend[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider29" type="divider">
+      <obj_property name="label">IF_stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/pc_src" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_src</obj_property>
+      <obj_property name="ObjectShortName">pc_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/branch_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">branch_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_addr[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/pc_plus_four" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_plus_four[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus_four[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/mem_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/read_data_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/mem_read_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_read_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/pc_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_temp[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/IF/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42" type="divider">
+      <obj_property name="label">MEMWB_read_data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/MEMWB_read_data/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/MEMWB_read_data/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/MEMWB_read_data/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/MEMWB_read_data/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/MEMWB_read_data/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/MEMWB_read_data/WORD_SIZE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WORD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WORD_SIZE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider49" type="divider">
+      <obj_property name="label">wb_mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/wb_mux/select_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">select_in</obj_property>
+      <obj_property name="ObjectShortName">select_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/wb_mux/datain1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datain1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datain1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/wb_mux/datain2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datain2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datain2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/wb_mux/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/wb_mux/WORD_SIZE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WORD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WORD_SIZE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -25,12 +25,15 @@ wire [31:0] alu_result;
 wire [31:0] read_data_2;
 wire [31:0] read_data;
 wire [31:0] branch_addr;
+wire [31:0] MEM_alu_result;
+wire [31:0] MEM_read_data_2;
+wire [31:0] MEM_branch_addr;
 
 IF_stage IF(
 	.clk(clk),
 	.rst(rst),
 	.pc_src(pc_src),
-	.branch_addr(branch_addr),
+	.branch_addr(MEM_branch_addr),
 	.pc_plus_four(pc_plus_four),    //IF/ID
 	.instruction(instruction),      //IF/ID
 	.pc(prog_count),
@@ -123,9 +126,6 @@ EX_stage EX(
 	.write_reg_addr(EX_write_reg_addr)
 );
 
-wire [31:0] MEM_branch_addr;
-wire [31:0] MEM_alu_result;
-wire [31:0] MEM_read_data_2;
 wire [4:0] MEM_write_reg_addr;
 gen_register EXMEM_branch_addr(.clk(clk),.rst(rst),.write_en(true),.data_in(branch_addr),.data_out(MEM_branch_addr));
 gen_register #(1) EXMEM_alu_zero(.clk(clk),.rst(rst),.write_en(true),.data_in(alu_zero),.data_out(MEM_alu_zero));
