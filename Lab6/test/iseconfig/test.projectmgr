@@ -1,22 +1,22 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
-<Project version="2" owner="projectmgr" name="lab6" >
+<Project version="2" owner="projectmgr" name="test" >
    <!--This is an ISE project configuration file.-->
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/CAM_Wrapper C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|lab6|CAM_Wrapper.v/CAMArray - CAM_Array</ClosedNode>
+         <ClosedNode>/CAM_Wrapper C:|Users|marco|Downloads|CAM_Wrapper.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CAM_Wrapper (C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab6/VHDL/CAM_Wrapper.v)</SelectedItem>
+         <SelectedItem>CAM_Wrapper (C:/Users/marco/Downloads/CAM_Wrapper.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015f0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000134000000020000000000000000000000000200000064ffffffff000000810000000300000002000001340000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>CAM_Wrapper (C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab6/VHDL/CAM_Wrapper.v)</CurrentItem>
+      <CurrentItem>CAM_Wrapper (C:/Users/marco/Downloads/CAM_Wrapper.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -24,13 +24,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012d0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -76,30 +76,25 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/BCAM_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|VHDL|BCAM_tb.v</ClosedNode>
-         <ClosedNode>/BCAM_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|lab6|BCAM_tb.v</ClosedNode>
-         <ClosedNode>/CAM_Row C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|lab6|CAM_Row.v</ClosedNode>
-         <ClosedNode>/CAM_Row_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|VHDL|CAM_Row_tb.v</ClosedNode>
-         <ClosedNode>/CAM_Row_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|lab6|CAM_Row_tb.v</ClosedNode>
-         <ClosedNode>/STCAM_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|VHDL|STCAM_tb.v</ClosedNode>
-         <ClosedNode>/STCAM_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|lab6|STCAM_tb.v</ClosedNode>
-         <ClosedNode>/TCAM_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|VHDL|TCAM_tb.v</ClosedNode>
-         <ClosedNode>/TCAM_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|lab6|TCAM_tb.v</ClosedNode>
-         <ClosedNode>/lab06_tb C:|Users|marco|Dropbox|School|SPRING 2017|161L|New Stuff|Lab6|VHDL|lab06_tb.v</ClosedNode>
+         <ClosedNode>/BCAM_tb C:|Users|marco|Downloads|BCAM_tb.v</ClosedNode>
+         <ClosedNode>/CAM_Row_tb C:|Users|marco|Downloads|CAM_Row_tb.v</ClosedNode>
+         <ClosedNode>/STCAM_tb C:|Users|marco|Downloads|STCAM_tb.v</ClosedNode>
+         <ClosedNode>/TCAM_tb C:|Users|marco|Downloads|TCAM_tb.v</ClosedNode>
+         <ClosedNode>/lab06_tb C:|Users|marco|Downloads|lab06_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lab06_tb (C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab6/VHDL/lab06_tb.v)</SelectedItem>
+         <SelectedItem>lab06_tb (C:/Users/marco/Downloads/lab06_tb.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000110000000020000000000000000000000000200000064ffffffff000000810000000300000002000001100000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>lab06_tb (C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab6/VHDL/lab06_tb.v)</CurrentItem>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>lab06_tb (C:/Users/marco/Downloads/lab06_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
