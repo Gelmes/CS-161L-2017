@@ -18,7 +18,7 @@ void directMapped(){
 
 		int total = 0, miss = 0;
 		int tagBits = log2(cache_sz);
-		for(int i = 0; i < data.size(); i++){
+		for(unsigned int i = 0; i < data.size(); i++){
 				read_line = data[i];
 				total++;
 				unsigned long long tag   = read_line >> (tagBits); // get tag
@@ -49,8 +49,7 @@ void FIFO(int assoc){
 
 		int total = 0, miss = 0;
 		int tagBits = log2(cache_sz); // Bits needed for tag
-		for(int i = 0; i < data.size(); i++){
-				int row = 0;
+		for(unsigned int i = 0; i < data.size(); i++){
 				read_line = data[i];
 				total++;
 				unsigned long long tag   = read_line >> (tagBits); // get tag
@@ -74,7 +73,6 @@ void FIFO(int assoc){
 						}
 					}
 					if(allTaken){	//All taken so move one up, then change last(FIFO)
-						unsigned long long tempTag = cache[index][assoc - 1];
 						for(int j = 0; j < assoc-1; j++)
 							cache[index][j] = cache[index][j + 1];
 						
@@ -99,7 +97,7 @@ void LRU(int assoc){
 
 		double total = 0, miss = 0;
 		int tagBits = log2(cache_sz); // Bits needed for tag
-		for(int i = 0; i < data.size(); i++){
+		for(unsigned int i = 0; i < data.size(); i++){
 				read_line = data[i];
 				total++;
 				unsigned long long tag   = read_line >> (tagBits); // get tag
@@ -108,7 +106,7 @@ void LRU(int assoc){
 				index = index % mod;
 				bool missed = true;
 				
-				for(int j = 0; j < cache.at(index).size(); j++){ //Checks if tag is present in cache, if not Missed is true
+				for(unsigned int j = 0; j < cache.at(index).size(); j++){ //Checks if tag is present in cache, if not Missed is true
 					if(cache[index][j] == tag){ //It's a hit, so update LRU stack
 						missed = false;
 						if(j == cache.at(index).size() - 1){} //It's at the back do nothing
@@ -116,7 +114,7 @@ void LRU(int assoc){
 						else{ // Move everything one forward starting from j
 							unsigned long long temp = cache.at(index).at(j); // Get index at j
 							
-							for(int x = j; x < cache.at(index).size() - 1; x++) // Move list
+							for(unsigned int x = j; x < cache.at(index).size() - 1; x++) // Move list
 								cache.at(index).at(x) = cache.at(index).at(x + 1); 
 							
 							cache.at(index).at(cache.at(index).size()-1) = temp; // Put index at j at the back
@@ -124,7 +122,7 @@ void LRU(int assoc){
 					}
 				}
 				if(missed){
-					if( cache.at(index).size()!= assoc) cache.at(index).push_back(tag); // Not full yet, so just use the remainin slots in that Index
+					if( cache.at(index).size()!= (unsigned int)assoc) cache.at(index).push_back(tag); // Not full yet, so just use the remainin slots in that Index
 					else{
 						for(int x = 0; x < assoc - 1; x++){ // Move list
 								cache.at(index).at(x) = cache.at(index).at(x + 1); 
