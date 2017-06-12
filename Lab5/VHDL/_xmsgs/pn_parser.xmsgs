@@ -8,7 +8,48 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/EX_stage.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/ID_stage.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/IF_stage.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/alu.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/alu_control.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/alu_control.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/constants.v&apos; in file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/alu_control.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/control_unit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/control_unit.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/constants.v&apos; in file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/control_unit.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cpu_constant_library.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cpu_registers.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cpumemory.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/cs161_processor.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/gen_register.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab5/VHDL/mux_2_1.v&quot; into library work</arg>
 </msg>
 
 </messages>

@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.xst" -ofn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.syr" 
+xst -intstyle ise -ifn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.xst" -ofn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.syr" 
+xst -intstyle ise -ifn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.xst" -ofn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.syr" 
+xst -intstyle ise -ifn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.xst" -ofn "C:/Users/marco/Dropbox/School/SPRING 2017/161L/New Stuff/Lab8/alu_master.syr" 

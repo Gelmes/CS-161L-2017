@@ -1,0 +1,1042 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: alu_master.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "alu_master.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "alu_master"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : alu_master
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\BinarytoBCD.v" into library work
+Parsing module <BinarytoBCD>.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\BCDtoBinary.v" into library work
+Parsing module <BCDtoBinary>.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu_master.v" into library work
+Parsing module <alu_master>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <alu_master>.
+
+Elaborating module <BCDtoBinary>.
+
+Elaborating module <alu>.
+WARNING:HDLCompiler:413 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v" Line 40: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v" Line 44: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v" Line 48: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v" Line 58: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <BinarytoBCD>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <alu_master>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu_master.v".
+    Summary:
+	no macro.
+Unit <alu_master> synthesized.
+
+Synthesizing Unit <BCDtoBinary>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\BCDtoBinary.v".
+WARNING:Xst:647 - Input <in<31:28>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit adder for signal <n0035[8:0]> created at line 8.
+    Found 12-bit adder for signal <n0038[11:0]> created at line 8.
+    Found 15-bit adder for signal <n0041[14:0]> created at line 8.
+    Found 19-bit adder for signal <n0044[18:0]> created at line 8.
+    Found 22-bit adder for signal <n0047[21:0]> created at line 8.
+    Found 25-bit adder for signal <n0050[24:0]> created at line 8.
+    Found 4x4-bit multiplier for signal <PWR_2_o_in[7]_MuLt_0_OUT> created at line 9.
+    Found 7x4-bit multiplier for signal <PWR_2_o_in[11]_MuLt_2_OUT> created at line 10.
+    Found 10x4-bit multiplier for signal <PWR_2_o_in[15]_MuLt_4_OUT> created at line 11.
+    Found 14x4-bit multiplier for signal <PWR_2_o_in[19]_MuLt_6_OUT> created at line 12.
+    Found 17x4-bit multiplier for signal <PWR_2_o_in[23]_MuLt_8_OUT> created at line 13.
+    Found 20x4-bit multiplier for signal <PWR_2_o_in[27]_MuLt_10_OUT> created at line 14.
+    Summary:
+	inferred   6 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <BCDtoBinary> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\alu.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_4_OUT> created at line 43.
+    Found 32-bit adder for signal <A[31]_B[31]_add_0_OUT> created at line 39.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <A[31]_A[31]_LessThan_2_o> created at line 40
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_5_o> created at line 44
+    Found 1-bit comparator not equal for signal <n0007> created at line 48
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Latch(s).
+	inferred   3 Comparator(s).
+	inferred 100 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <BinarytoBCD>.
+    Related source file is "C:\Users\marco\Dropbox\School\SPRING 2017\161L\New Stuff\Lab8\BinarytoBCD.v".
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_2_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_17_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_19_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_21_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_23_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_25_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_27_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_29_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_32_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_34_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_36_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_38_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_40_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_42_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_44_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_47_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_49_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_51_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_53_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_55_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_57_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_59_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_62_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_64_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_66_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_68_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_70_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_72_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_74_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_77_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_79_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_81_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_83_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_85_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_87_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_89_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_92_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_94_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_96_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_98_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_100_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_102_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_104_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_107_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_109_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_111_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_113_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_115_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_117_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_119_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_122_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_124_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_126_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_128_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_130_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_132_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_134_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_137_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_139_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_141_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_143_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_145_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_147_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_149_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_152_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_154_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_156_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_158_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_160_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_162_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_164_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_167_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_169_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_171_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_173_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_175_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_177_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_179_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_182_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_184_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_186_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_188_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_190_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_192_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_194_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_197_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_199_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_201_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_203_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_205_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_207_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_209_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_212_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_214_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_216_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_218_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_220_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_222_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_224_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_227_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_229_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_231_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_233_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_235_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_237_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_239_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_242_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_244_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_246_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_248_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_250_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_252_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_254_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_257_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_259_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_261_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_263_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_265_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_267_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_269_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_272_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_274_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_276_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_278_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_280_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_282_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_284_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_287_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_289_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_291_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_293_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_295_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_297_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_299_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_302_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_304_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_306_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_308_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_310_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_312_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_314_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_317_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_319_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_321_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_323_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_325_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_327_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_329_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_332_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_334_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_336_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_338_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_340_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_342_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_344_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_347_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_349_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_351_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_353_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_355_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_357_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_359_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_362_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_364_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_366_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_368_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_370_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_372_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_374_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_377_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_379_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_381_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_383_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_385_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_387_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_389_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_392_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_394_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_396_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_398_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_400_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_402_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_404_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_407_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_409_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_411_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_413_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_415_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_417_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_419_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_422_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_424_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_426_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_428_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_430_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_432_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_434_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_437_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_439_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_441_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_443_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_445_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_447_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_449_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_452_OUT> created at line 15.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_454_OUT> created at line 16.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_456_OUT> created at line 17.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_458_OUT> created at line 18.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_460_OUT> created at line 19.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_462_OUT> created at line 20.
+    Found 4-bit adder for signal <GND_42_o_GND_42_o_add_464_OUT> created at line 21.
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_2_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_17_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_19_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_21_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_23_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_25_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_27_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_29_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_32_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_34_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_36_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_38_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_40_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_42_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_44_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_47_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_49_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_51_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_53_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_55_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_57_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_59_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_62_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_64_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_66_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_68_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_70_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_72_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_74_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_77_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_79_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_81_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_83_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_85_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_87_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_89_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_92_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_94_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_96_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_98_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_100_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_102_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_104_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_107_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_109_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_111_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_113_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_115_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_117_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_119_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_122_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_124_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_126_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_128_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_130_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_132_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_134_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_137_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_139_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_141_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_143_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_145_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_147_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_149_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_152_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_154_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_156_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_158_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_160_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_162_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_164_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_167_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_169_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_171_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_173_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_175_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_177_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_179_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_182_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_184_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_186_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_188_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_190_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_192_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_194_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_197_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_199_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_201_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_203_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_205_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_207_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_209_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_212_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_214_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_216_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_218_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_220_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_222_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_224_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_227_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_229_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_231_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_233_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_235_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_237_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_239_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_242_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_244_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_246_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_248_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_250_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_252_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_254_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_257_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_259_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_261_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_263_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_265_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_267_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_269_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_272_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_274_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_276_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_278_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_280_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_282_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_284_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_287_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_289_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_291_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_293_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_295_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_297_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_299_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_302_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_304_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_306_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_308_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_310_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_312_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_314_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_317_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_319_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_321_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_323_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_325_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_327_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_329_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_332_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_334_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_336_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_338_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_340_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_342_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_344_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_347_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_349_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_351_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_353_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_355_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_357_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_359_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_362_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_364_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_366_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_368_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_370_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_372_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_374_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_377_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_379_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_381_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_383_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_385_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_387_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_389_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_392_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_394_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_396_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_398_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_400_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_402_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_404_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_407_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_409_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_411_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_413_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_415_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_417_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_419_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_422_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_424_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_426_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_428_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_430_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_432_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_434_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_437_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_439_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_441_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_443_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_445_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_447_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_449_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_452_o> created at line 15
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_454_o> created at line 16
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_456_o> created at line 17
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_458_o> created at line 18
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_460_o> created at line 19
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_462_o> created at line 20
+    Found 4-bit comparator greater for signal <GND_42_o_GND_42_o_LessThan_464_o> created at line 21
+    Summary:
+	inferred 211 Adder/Subtractor(s).
+	inferred 211 Comparator(s).
+	inferred 844 Multiplexer(s).
+Unit <BinarytoBCD> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 12
+ 10x4-bit multiplier                                   : 2
+ 14x4-bit multiplier                                   : 2
+ 17x4-bit multiplier                                   : 2
+ 20x4-bit multiplier                                   : 2
+ 4x4-bit multiplier                                    : 2
+ 7x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 225
+ 12-bit adder                                          : 2
+ 15-bit adder                                          : 2
+ 19-bit adder                                          : 2
+ 22-bit adder                                          : 2
+ 25-bit adder                                          : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+ 4-bit adder                                           : 211
+ 9-bit adder                                           : 2
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Comparators                                          : 214
+ 1-bit comparator not equal                            : 1
+ 32-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 211
+# Multiplexers                                         : 944
+ 1-bit 2-to-1 multiplexer                              : 940
+ 32-bit 2-to-1 multiplexer                             : 4
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.1\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.1\ISE_DS\ISE\.
+
+Synthesizing (advanced) Unit <BCDtoBinary>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0050[24:0]1> :
+ 	<Madd_n0035[8:0]> in block <BCDtoBinary>, 	<Madd_n0038[11:0]> in block <BCDtoBinary>, 	<Madd_n0041[14:0]> in block <BCDtoBinary>, 	<Madd_n0044[18:0]> in block <BCDtoBinary>, 	<Madd_n0047[21:0]> in block <BCDtoBinary>, 	<Madd_n0050[24:0]> in block <BCDtoBinary>.
+	Multiplier <Mmult_PWR_2_o_in[27]_MuLt_10_OUT> in block <BCDtoBinary> and adder/subtractor <ADDER_FOR_MULTADD_Madd5> in block <BCDtoBinary> are combined into a MAC<Maddsub_PWR_2_o_in[27]_MuLt_10_OUT>.
+	Multiplier <Mmult_PWR_2_o_in[23]_MuLt_8_OUT> in block <BCDtoBinary> and adder/subtractor <ADDER_FOR_MULTADD_Madd4> in block <BCDtoBinary> are combined into a MAC<Maddsub_PWR_2_o_in[23]_MuLt_8_OUT>.
+	Multiplier <Mmult_PWR_2_o_in[19]_MuLt_6_OUT> in block <BCDtoBinary> and adder/subtractor <ADDER_FOR_MULTADD_Madd3> in block <BCDtoBinary> are combined into a MAC<Maddsub_PWR_2_o_in[19]_MuLt_6_OUT>.
+	Multiplier <Mmult_PWR_2_o_in[15]_MuLt_4_OUT> in block <BCDtoBinary> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <BCDtoBinary> are combined into a MAC<Maddsub_PWR_2_o_in[15]_MuLt_4_OUT>.
+	Multiplier <Mmult_PWR_2_o_in[11]_MuLt_2_OUT> in block <BCDtoBinary> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <BCDtoBinary> are combined into a MAC<Maddsub_PWR_2_o_in[11]_MuLt_2_OUT>.
+	Multiplier <Mmult_PWR_2_o_in[7]_MuLt_0_OUT> in block <BCDtoBinary> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <BCDtoBinary> are combined into a MAC<Maddsub_PWR_2_o_in[7]_MuLt_0_OUT>.
+Unit <BCDtoBinary> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 12
+ 10x4-to-25-bit MAC                                    : 2
+ 14x4-to-25-bit MAC                                    : 2
+ 17x4-to-25-bit MAC                                    : 2
+ 20x4-to-25-bit MAC                                    : 2
+ 4x4-to-25-bit MAC                                     : 2
+ 7x4-to-25-bit MAC                                     : 2
+# Adders/Subtractors                                   : 213
+ 3-bit adder                                           : 26
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+ 4-bit adder                                           : 185
+# Comparators                                          : 214
+ 1-bit comparator not equal                            : 1
+ 32-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 211
+# Multiplexers                                         : 918
+ 1-bit 2-to-1 multiplexer                              : 914
+ 32-bit 2-to-1 multiplexer                             : 4
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <temp_29> in Unit <alu> is equivalent to the following 5 FFs/Latches, which will be removed : <temp_31> <temp_30> <temp_28> <temp_27> <temp_26> 
+
+Optimizing unit <alu_master> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <BinarytoBCD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu_master, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : alu_master.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 634
+#      GND                         : 1
+#      LUT2                        : 53
+#      LUT3                        : 34
+#      LUT4                        : 54
+#      LUT5                        : 5
+#      LUT6                        : 359
+#      MUXCY                       : 75
+#      VCC                         : 1
+#      XORCY                       : 52
+# FlipFlops/Latches                : 27
+#      LD                          : 27
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 99
+#      IBUF                        : 60
+#      OBUF                        : 39
+# DSPs                             : 12
+#      DSP48E1                     : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              27  out of  126800     0%  
+ Number of Slice LUTs:                  505  out of  63400     0%  
+    Number used as Logic:               505  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    505
+   Number with an unused Flip Flop:     478  out of    505    94%  
+   Number with an unused LUT:             0  out of    505     0%  
+   Number of fully used LUT-FF pairs:    27  out of    505     5%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         107
+ Number of bonded IOBs:                  99  out of    210    47%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                     12  out of    240     5%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+math/_n0152(math/out1:O)           | BUFG(*)(math/temp_0)   | 27    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 13.124ns
+   Maximum output required time after clock: 21.271ns
+   Maximum combinational path delay: 33.612ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'math/_n0152'
+  Total number of paths / destination ports: 4377749024527 / 27
+-------------------------------------------------------------------------
+Offset:              13.124ns (Levels of Logic = 34)
+  Source:            A<7> (PAD)
+  Destination:       math/temp_24 (LATCH)
+  Destination Clock: math/_n0152 falling
+
+  Data Path: A<7> to math/temp_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.339  A_7_IBUF (A_7_IBUF)
+     DSP48E1:A3->PCOUT47    1   3.397   0.000  inA/Maddsub_PWR_2_o_in[7]_MuLt_0_OUT (inA/Maddsub_PWR_2_o_in[7]_MuLt_0_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[11]_MuLt_2_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[11]_MuLt_2_OUT (inA/Maddsub_PWR_2_o_in[11]_MuLt_2_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[15]_MuLt_4_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[15]_MuLt_4_OUT (inA/Maddsub_PWR_2_o_in[15]_MuLt_4_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[19]_MuLt_6_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[19]_MuLt_6_OUT (inA/Maddsub_PWR_2_o_in[19]_MuLt_6_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[23]_MuLt_8_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[23]_MuLt_8_OUT (inA/Maddsub_PWR_2_o_in[23]_MuLt_8_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[27]_MuLt_10_OUT_PCIN_47)
+     DSP48E1:PCIN47->P0    6   1.271   0.467  inA/Maddsub_PWR_2_o_in[27]_MuLt_10_OUT (input_a<0>)
+     LUT2:I0->O            1   0.097   0.000  math/Madd_A[31]_B[31]_add_0_OUT_lut<0> (math/Madd_A[31]_B[31]_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<0> (math/Madd_A[31]_B[31]_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<1> (math/Madd_A[31]_B[31]_add_0_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<2> (math/Madd_A[31]_B[31]_add_0_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<3> (math/Madd_A[31]_B[31]_add_0_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<4> (math/Madd_A[31]_B[31]_add_0_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<5> (math/Madd_A[31]_B[31]_add_0_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<6> (math/Madd_A[31]_B[31]_add_0_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<7> (math/Madd_A[31]_B[31]_add_0_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<8> (math/Madd_A[31]_B[31]_add_0_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<9> (math/Madd_A[31]_B[31]_add_0_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<10> (math/Madd_A[31]_B[31]_add_0_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<11> (math/Madd_A[31]_B[31]_add_0_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<12> (math/Madd_A[31]_B[31]_add_0_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<13> (math/Madd_A[31]_B[31]_add_0_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<14> (math/Madd_A[31]_B[31]_add_0_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<15> (math/Madd_A[31]_B[31]_add_0_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<16> (math/Madd_A[31]_B[31]_add_0_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<17> (math/Madd_A[31]_B[31]_add_0_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<18> (math/Madd_A[31]_B[31]_add_0_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<19> (math/Madd_A[31]_B[31]_add_0_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<20> (math/Madd_A[31]_B[31]_add_0_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<21> (math/Madd_A[31]_B[31]_add_0_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<22> (math/Madd_A[31]_B[31]_add_0_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  math/Madd_A[31]_B[31]_add_0_OUT_cy<23> (math/Madd_A[31]_B[31]_add_0_OUT_cy<23>)
+     XORCY:CI->O           3   0.370   0.451  math/Madd_A[31]_B[31]_add_0_OUT_xor<24> (math/A[31]_B[31]_add_0_OUT<24>)
+     LUT3:I1->O            1   0.097   0.000  math/Mmux__n028211 (math/_n0282)
+     LD:D                     -0.028          math/temp_24
+    ----------------------------------------
+    Total                     13.124ns (11.867ns logic, 1.257ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'math/_n0152'
+  Total number of paths / destination ports: 15696485560846 / 33
+-------------------------------------------------------------------------
+Offset:              21.271ns (Levels of Logic = 25)
+  Source:            math/temp_24 (LATCH)
+  Destination:       result<2> (PAD)
+  Source Clock:      math/_n0152 falling
+
+  Data Path: math/temp_24 to result<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.355  math/temp_24 (math/temp_24)
+     LUT6:I5->O            7   0.097   0.777  math/Mmux_result171 (output_result<24>)
+     LUT6:I1->O           11   0.097   0.799  out/Mmux_GND_42_o_GND_42_o_MUX_293_o11 (out/Madd_GND_42_o_GND_42_o_add_139_OUT_cy<0>)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_137_o1 (out/GND_42_o_GND_42_o_LessThan_137_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_152_o1 (out/GND_42_o_GND_42_o_LessThan_152_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_167_o1 (out/GND_42_o_GND_42_o_LessThan_167_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_182_o1 (out/GND_42_o_GND_42_o_LessThan_182_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_197_o1 (out/GND_42_o_GND_42_o_LessThan_197_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_212_o1 (out/GND_42_o_GND_42_o_LessThan_212_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_227_o1 (out/GND_42_o_GND_42_o_LessThan_227_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_242_o1 (out/GND_42_o_GND_42_o_LessThan_242_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_257_o1 (out/GND_42_o_GND_42_o_LessThan_257_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_272_o1 (out/GND_42_o_GND_42_o_LessThan_272_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_287_o1 (out/GND_42_o_GND_42_o_LessThan_287_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_302_o1 (out/GND_42_o_GND_42_o_LessThan_302_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_317_o1 (out/GND_42_o_GND_42_o_LessThan_317_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_332_o1 (out/GND_42_o_GND_42_o_LessThan_332_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_347_o1 (out/GND_42_o_GND_42_o_LessThan_347_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_362_o1 (out/GND_42_o_GND_42_o_LessThan_362_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_377_o1 (out/GND_42_o_GND_42_o_LessThan_377_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_392_o1 (out/GND_42_o_GND_42_o_LessThan_392_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_407_o1 (out/GND_42_o_GND_42_o_LessThan_407_o)
+     LUT6:I1->O            7   0.097   0.777  out/GND_42_o_GND_42_o_LessThan_422_o1 (out/GND_42_o_GND_42_o_LessThan_422_o)
+     LUT6:I1->O            4   0.097   0.770  out/GND_42_o_GND_42_o_LessThan_437_o1 (out/GND_42_o_GND_42_o_LessThan_437_o)
+     LUT6:I0->O            1   0.097   0.339  out/Mmux_GND_42_o_GND_42_o_MUX_911_o11 (result_2_OBUF)
+     OBUF:I->O                 0.000          result_2_OBUF (result<2>)
+    ----------------------------------------
+    Total                     21.271ns (2.800ns logic, 18.471ns route)
+                                       (13.2% logic, 86.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4219430588604464700000000 / 35
+-------------------------------------------------------------------------
+Delay:               33.612ns (Levels of Logic = 59)
+  Source:            A<7> (PAD)
+  Destination:       result<2> (PAD)
+
+  Data Path: A<7> to result<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.339  A_7_IBUF (A_7_IBUF)
+     DSP48E1:A3->PCOUT47    1   3.397   0.000  inA/Maddsub_PWR_2_o_in[7]_MuLt_0_OUT (inA/Maddsub_PWR_2_o_in[7]_MuLt_0_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[11]_MuLt_2_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[11]_MuLt_2_OUT (inA/Maddsub_PWR_2_o_in[11]_MuLt_2_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[15]_MuLt_4_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[15]_MuLt_4_OUT (inA/Maddsub_PWR_2_o_in[15]_MuLt_4_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[19]_MuLt_6_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[19]_MuLt_6_OUT (inA/Maddsub_PWR_2_o_in[19]_MuLt_6_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[23]_MuLt_8_OUT_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.438   0.000  inA/Maddsub_PWR_2_o_in[23]_MuLt_8_OUT (inA/Maddsub_PWR_2_o_in[23]_MuLt_8_OUT_PCOUT_to_inA/Maddsub_PWR_2_o_in[27]_MuLt_10_OUT_PCIN_47)
+     DSP48E1:PCIN47->P0    6   1.271   0.467  inA/Maddsub_PWR_2_o_in[27]_MuLt_10_OUT (input_a<0>)
+     LUT2:I0->O            1   0.097   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_lut<0> (math/Msub_A[31]_B[31]_sub_4_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<0> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<1> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<2> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<3> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<4> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<5> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<6> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<7> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<8> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<9> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<10> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<11> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<12> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<13> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<14> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<15> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<16> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<17> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<18> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<19> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<20> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<21> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<22> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<23> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  math/Msub_A[31]_B[31]_sub_4_OUT_cy<24> (math/Msub_A[31]_B[31]_sub_4_OUT_cy<24>)
+     XORCY:CI->O           2   0.370   0.576  math/Msub_A[31]_B[31]_sub_4_OUT_xor<25> (math/A[31]_B[31]_sub_4_OUT<25>)
+     LUT6:I3->O            4   0.097   0.770  math/Mmux_result181 (output_result<25>)
+     LUT6:I0->O           11   0.097   0.799  out/Mmux_GND_42_o_GND_42_o_MUX_293_o11 (out/Madd_GND_42_o_GND_42_o_add_139_OUT_cy<0>)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_137_o1 (out/GND_42_o_GND_42_o_LessThan_137_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_152_o1 (out/GND_42_o_GND_42_o_LessThan_152_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_167_o1 (out/GND_42_o_GND_42_o_LessThan_167_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_182_o1 (out/GND_42_o_GND_42_o_LessThan_182_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_197_o1 (out/GND_42_o_GND_42_o_LessThan_197_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_212_o1 (out/GND_42_o_GND_42_o_LessThan_212_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_227_o1 (out/GND_42_o_GND_42_o_LessThan_227_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_242_o1 (out/GND_42_o_GND_42_o_LessThan_242_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_257_o1 (out/GND_42_o_GND_42_o_LessThan_257_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_272_o1 (out/GND_42_o_GND_42_o_LessThan_272_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_287_o1 (out/GND_42_o_GND_42_o_LessThan_287_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_302_o1 (out/GND_42_o_GND_42_o_LessThan_302_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_317_o1 (out/GND_42_o_GND_42_o_LessThan_317_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_332_o1 (out/GND_42_o_GND_42_o_LessThan_332_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_347_o1 (out/GND_42_o_GND_42_o_LessThan_347_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_362_o1 (out/GND_42_o_GND_42_o_LessThan_362_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_377_o1 (out/GND_42_o_GND_42_o_LessThan_377_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_392_o1 (out/GND_42_o_GND_42_o_LessThan_392_o)
+     LUT6:I1->O            6   0.097   0.771  out/GND_42_o_GND_42_o_LessThan_407_o1 (out/GND_42_o_GND_42_o_LessThan_407_o)
+     LUT6:I1->O            7   0.097   0.777  out/GND_42_o_GND_42_o_LessThan_422_o1 (out/GND_42_o_GND_42_o_LessThan_422_o)
+     LUT6:I1->O            4   0.097   0.770  out/GND_42_o_GND_42_o_LessThan_437_o1 (out/GND_42_o_GND_42_o_LessThan_437_o)
+     LUT6:I0->O            1   0.097   0.339  out/Mmux_GND_42_o_GND_42_o_MUX_911_o11 (result_2_OBUF)
+     OBUF:I->O                 0.000          result_2_OBUF (result<2>)
+    ----------------------------------------
+    Total                     33.612ns (14.121ns logic, 19.491ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 49.16 secs
+ 
+--> 
+
+Total memory usage is 889208 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

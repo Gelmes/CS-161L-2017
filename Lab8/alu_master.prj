@@ -1,0 +1,4 @@
+verilog work "BinarytoBCD.v"
+verilog work "BCDtoBinary.v"
+verilog work "alu.v"
+verilog work "alu_master.v"
